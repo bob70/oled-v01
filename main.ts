@@ -15,6 +15,12 @@ basic.forever(function () {
     "Hello!",
     1
     )
+    OLED12864_I2C.hline(
+    0,
+    10,
+    counter,
+    3
+    )
     basic.pause(100)
     counter = counter + 1
 })
